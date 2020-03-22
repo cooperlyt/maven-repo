@@ -6,7 +6,7 @@
 
     <groupId>cc.coopersoft</groupId>
     <artifactId>common-cloud</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <packaging>jar</packaging>
 
     <name>Spring Cloud Comm Lib</name>
@@ -163,11 +163,11 @@
         </plugins>
     </build>
 
-    <distributionManagement>
-        <repository>
-            <id>cooper-mvn-repo</id>
-            <url>file:/Users/cooper/code/maven-repo/repository/</url>
-        </repository>
-    </distributionManagement>
+<!--    <distributionManagement>-->
+<!--        <repository>-->
+<!--            <id>cooper-mvn-repo</id>-->
+<!--            <url>file:/Users/cooper/code/maven-repo/repository/</url>-->
+<!--        </repository>-->
+<!--    </distributionManagement>-->
 
 </project>
