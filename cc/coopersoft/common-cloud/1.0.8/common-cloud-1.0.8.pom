@@ -6,19 +6,25 @@
 
     <groupId>cc.coopersoft</groupId>
     <artifactId>common-cloud</artifactId>
-    <version>1.0.7</version>
+    <version>1.0.8</version>
     <packaging>jar</packaging>
 
     <name>Spring Cloud Comm Lib</name>
     <description>Spring Cloud Comm Lib</description>
 
-
     <properties>
         <!-- 设置 github 服务器使用的配置，在 ~/.m2/settings.xml 中定义 -->
         <github.global.server>github</github.global.server>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.5</version>
+        </dependency>
 
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -65,7 +71,7 @@
         <dependency>
             <groupId>org.springframework.security.oauth</groupId>
             <artifactId>spring-security-oauth2</artifactId>
-            <version>2.3.3.RELEASE</version>
+            <version>2.3.6.RELEASE</version>
             <scope>provided</scope>
         </dependency>
 
@@ -101,6 +107,16 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <excludes>
+                    <exclude>*.cert</exclude>
+                </excludes>
+            </resource>
+        </resources>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
