@@ -6,7 +6,7 @@
 
     <groupId>cc.coopersoft</groupId>
     <artifactId>common-cloud-spring-boot-starter</artifactId>
-    <version>1.0.11</version>
+    <version>1.0.12</version>
     <packaging>jar</packaging>
 
     <name>Spring Cloud Comm Lib</name>
@@ -118,7 +118,7 @@
             <resource>
                 <directory>src/main/resources</directory>
                 <includes>
-                    <include>**/*.cert</include>
+                    <include>*.cert</include>
                 </includes>
             </resource>
         </resources>
