@@ -4,11 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>cc.coopersoft</groupId>
-    <version>2.2.28</version>
+    <version>2.2.32</version>
     <artifactId>common-construct</artifactId>
     <packaging>jar</packaging>
 
-    <name>Construct Comm Lib</name>
+    <name>Construct Common Lib</name>
     <description>Construct Comm Lib </description>
 
     <properties>
@@ -17,9 +17,6 @@
     </properties>
 
     <dependencies>
-
-
-
 
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -53,6 +50,46 @@
             <artifactId>javax.persistence-api</artifactId>
             <version>2.2</version>
             <scope>provided</scope>
+        </dependency>
+
+
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
+
+
+<!--    pdf   report  dependency-->
+
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itextpdf</artifactId>
+            <version>5.5.13.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.itextpdf.tool</groupId>
+            <artifactId>xmlworker</artifactId>
+            <version>5.5.13.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itext-asian</artifactId>
+            <version>5.2.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.29</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>javase</artifactId>
+            <version>3.4.0</version>
         </dependency>
 
     </dependencies>
