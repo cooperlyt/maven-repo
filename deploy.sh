@@ -5,14 +5,14 @@ echo "    3、参数说明：r/s r是release正式版本，s是snapshot快照版
 #deploy参数，snapshot 表示快照包，简写为s， release表示正式包，简写为r
 set arg=%1
 
-set branch='snapshot'
+set branch='release'
 
-if ["s"=="%arg%"] 
+if [ $arg = 'snapshot' ] || [ $arg = 's' ] 
 then
     set branch='snapshot'
 fi
 
-if ["r"=="%arg%"] 
+if [ $arg = 'release' ] || [ $arg = 'r' ]
 then
     set branch='release'
 fi
