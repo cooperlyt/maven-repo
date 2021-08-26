@@ -7,12 +7,12 @@ set arg=%1
 
 set branch='release'
 
-if [ $arg = 'snapshot' ] || [ $arg = 's' ] 
+if [ $arg = 'snapshot' ] || [ $arg = 's' ];
 then
     set branch='snapshot'
 fi
 
-if [ $arg = 'release' ] || [ $arg = 'r' ]
+if [ $arg = 'release' ] || [ $arg = 'r' ];
 then
     set branch='release'
 fi
