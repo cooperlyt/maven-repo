@@ -5,15 +5,17 @@ echo "    3、参数说明：r/s r是release正式版本，s是snapshot快照版
 #deploy参数，snapshot 表示快照包，简写为s， release表示正式包，简写为r
 set arg=%1
 
-set "branch="
+set branch='snapshot'
 
-if "s"=="%arg%" (
-    set "branch=snapshot"
-)
+if ["s"=="%arg%"] 
+then
+    set branch='snapshot'
+fi
 
-if "r"=="%arg%" (
-    set "branch=release"
-)
+if ["r"=="%arg%"] 
+then
+    set branch='release'
+fi
 
 #正式包发布 release分支
 echo 本地存储库的发送到github仓库%branch%分支上
