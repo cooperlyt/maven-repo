@@ -5,7 +5,7 @@ echo "    3、参数说明：r/s r是release正式版本，s是snapshot快照版
 #deploy参数，snapshot 表示快照包，简写为s， release表示正式包，简写为r
 arg=%1
 
-set branch='release'
+branch='release'
 
 if [ $arg = 'snapshot' ] || [ $arg = 's' ];
 then
