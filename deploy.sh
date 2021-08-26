@@ -9,12 +9,12 @@ set branch='release'
 
 if [ $arg = 'snapshot' ] || [ $arg = 's' ];
 then
-    set branch='snapshot'
+    branch='snapshot'
 fi
 
 if [ $arg = 'release' ] || [ $arg = 'r' ];
 then
-    set branch='release'
+    branch='release'
 fi
 
 #正式包发布 release分支
