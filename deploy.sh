@@ -18,7 +18,7 @@ then
 fi
 
 #正式包发布 release分支
-echo 本地存储库的发送到github仓库$branch分支上
+echo 本地存储库的发送到github仓库${branch}分支上
 git add .
 git commit -m "commit new"
 git pull
@@ -28,7 +28,7 @@ echo 将%branch%分支合并到master分支
 git checkout master
 git add .
 git git commit -m 'master'
-git merge %branch%
+git merge $branch
 git commit -m 'master merge'
 git push origin master
 
